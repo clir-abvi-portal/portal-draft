@@ -1,0 +1,14 @@
+field,display_name,btn,hidden,sort_name
+date,Date,,,Date
+personal_creator,Creator,true,,
+corporate_creator,,true,,
+personal_contributor,Contributor,true,,
+corporate_contributor,,true,,
+subject,Subjects,true
+personal_name_subject,,true
+corporate_name_subject,,true
+location,Location,true
+genre,Genre,true
+type,,,true
+objectid,,,true,Identifier
+contributing_institution,Contributing Institution,,true,,

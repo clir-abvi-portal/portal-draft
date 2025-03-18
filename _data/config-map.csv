@@ -1,0 +1,6 @@
+field,display_name,search
+date,Date,true
+creator,Creator,true
+subject,Subjects,true
+location,Location,true
+contributing_institution,Contributing Organization,true

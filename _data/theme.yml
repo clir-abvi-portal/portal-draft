@@ -1,0 +1,114 @@
+##########
+# CollectionBuilder Theme Customization
+# values set here help configure details of individual pages in the website
+##########
+
+##########
+# HOME PAGE
+#
+# featured image is used in home page banner and in meta markup to represent the collection
+# use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
+featured-image: https://titanapi.minisisinc.com/api/links/492768c0ab2f4b059262034753227522/uuid/e1784fd5298647099ff78bdf2c2333cd/access
+# optional: add extra padding around collection title for a larger image feature. 
+home-title-y-padding: 8em # the margin from the top your title portion will appear.
+# optional: change position of background image, center, top, bottom
+home-banner-image-position: center # Default is top
+
+##########
+# ITEM PAGE
+#
+# see _data/metadata-config.csv to define the metadata fields that will display.
+browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
+
+##########
+# SUBJECTS PAGE
+#
+subjects-fields: subject;personal_creator;personal_name_subject;corporate_name_subject # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
+subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# LOCATIONS PAGE
+#
+locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+locations-min: 1 # min size for subject cloud, too many terms = slow load time!
+locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# MAP PAGE
+#
+# see _data/map-config.csv for field display options
+latitude: 42.032974 #to determine center of map
+longitude: -93.581543 #to determine center of map
+zoom-level: 8 # zoom level for map 
+map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery, OpenStreetMap_Mapnik
+map-search: true # not suggested with large collections
+map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
+map-cluster: true # suggested for large collection or with many items in same location
+map-cluster-radius: 25 # size of clusters, from ~ 10 to 80
+
+##########
+# TIMELINE PAGE
+#
+# set either year-navigation or year-nav-increment to generate a year nav dropdown
+year-navigation: #"1900;1905;1910;1915;1920" # manually set years to appear in dropdown nav
+year-nav-increment: 5 # set increments to auto gen nav years
+
+##########
+# DATA 
+# 
+# add metadata fields for export in data downloads (tip: paste in first row of csv)
+# comma delimited list, reference url is automatic
+metadata-export-fields: "objectid,collectionid,parentid,display_template,sequence,title,archival_call_number,archival_collection,finding_aid_ark,archival_series_title,folder_title,box,folder_num,contributing_institution,contributing_institution_uri,personal_creator,personal_creator_uri,corporate_creator,corporate_creator_uri,interviewee,interviewee_uri,interviewer,interviewer_uri,personal_contributor,personal_contributor_uri,corporate_contributor,corporate_contributor_uri,description,language,subject,subject_uri,location,location_uri,latitude,longitude,geodetic_datum,personal_name_subject,personal_name_subject_uri,corporate_name_subject,corporate_name_subject_uri,chronological_subject,extent,medium,medium_uri,genre,genre_uri,type,format,rights,rights_management_valueURI,date,date_digital,publisher,publisher_uri,ark,pres_file,filename,image_small,image_thumb,object_location,object_pdf,image_alt_text,object_ocr,object_hocr,object_transcript,avian_id,uid,issuance,issuance_start,issuance_end,frequency,relation,relation_uri,disclaimer,digital_origin"
+# generate a facets list for given fields, comma delimited
+metadata-facets-fields: "subject,personal_creator,location,personal_name_subject,corporate_name_subject,chronological_subject,genre,format,contributing_institution"
+
+##########
+# Compound Objects 
+# 
+# Ignore this section if you are not including any compound objects
+# Note, like other items, child objects will only appear in visualizations if they have the correct metadata (lat long for map; date for timeline)
+# select true below if you'd like your compound object's child objects to appear in any of the pages or features listed
+map-child-objects: false # true / false - if true, and if child item has latitude and longitude, child objects will be displayed on map
+timeline-child-objects: false # true / false - if true, and if child object has date, child objects will appear as thumbnails on timeline page
+data-child-objects: false # true / false - if true, child objects will appear linked in table on data page
+carousel-child-objects: false # true / false - if true, child objects will appear on homepage carousel
+browse-child-objects: false # true / false - if true, child objects will appear on browse page and child objects' metadata will populate cloud pages like Subjects page and Locations page, as well as featured terms boxes on the home page
+search-child-objects: false # true / false - if true, child objects will appear on on search page along with parent objects
+
+
+##########
+# ADVANCED OPTIONS
+#
+
+# NAVBAR COLORS [optional!]
+# navbar text color
+# Choose from "navbar-light" for use with light background colors, or "navbar-dark" for dark background colors
+navbar-color: navbar-dark
+# navbar background color
+# Choose from bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
+navbar-background: bg-dark
+
+# THEME FONTS [optional!]
+base-font-size: 1.2em
+text-color: "#191919"
+link-color: "#C8102E"
+base-font-family: # comment out for bootstrap defaults. e.g. Roboto
+font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+# THEME ICONS [optional!]
+# default icons can be overridden or new icons can be added using "icons" object
+# the template uses Bootstrap Icons, https://icons.getbootstrap.com/
+# find the names on the BI icons page, e.g. file-image
+#
+# icons: 
+#   icon-image: image
+#   icon-audio: soundwave
+#   icon-video: film
+#   icon-pdf: file-pdf
+#   icon-record: file-text
+#   icon-panorama: image-alt
+#   icon-compound-object: collection 
+#   icon-multiple: postcard
+#   icon-default: file-earmark # fall back icon
+#   icon-back-to-top: arrow-up-square

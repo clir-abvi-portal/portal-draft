@@ -1,0 +1,33 @@
+---
+# Default home page with boxes providing collection stats
+layout: page
+---
+{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
+<div class="row">
+
+  <div class="col-md-8">
+
+    {% include index/description.html %}
+    {% include index/carousel.html title="Explore Resources" %}
+    {% include index/data-download.html %}
+    
+  </div>
+  <div class="col-md-4">  
+
+    {% include index/time.html %}
+
+    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="gold" %}
+
+    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary-blue-dark" %}
+
+    {% include index/featured-terms.html field="genre" title="Genre" btn-color="secondary-blue" %}
+
+    {% include index/featured-terms.html field="contributing_institution" title="Contributing Organizations" btn-color="green-light" %}
+    
+    {% comment %}
+    removed for clarity
+    {% include index/objects.html object_field="format" others=true total=true %}
+    {% endcomment %}
+  </div>
+
+</div>

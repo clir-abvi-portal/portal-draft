@@ -1,0 +1,18 @@
+display_name,stub,dropdown_parent
+Home,/,
+Search,search.html
+Resources,/resources.html,
+Browse,
+Subjects,/subjects.html,Browse
+Locations,/locations.html,Browse
+Map,/map.html,Browse
+Timeline,/timeline.html,Browse
+Data,/data.html,Browse
+Explore More,,
+Exhibit,/exhibit.html,Explore More
+The Bystander (newspaper),/bystander.html,Explore More
+Partners,/partners.html,Explore More
+About,,
+The Site,/site.html,About
+The Project,/project.html,About
+Contributors,/contributors.html,About

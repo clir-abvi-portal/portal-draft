@@ -1,0 +1,18 @@
+/* 
+    Put your custom SCSS here! 
+    This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
+*/
+
+h1 {
+    font-family: 'Merriweather';
+}
+
+.download-btn-rounded {
+    border-top-left-radius: .25rem !important;
+    border-bottom-left-radius: .25rem !important;
+}
+
+.custom-download-dropdown {
+    max-height: 500px;
+    overflow-y: auto;
+}

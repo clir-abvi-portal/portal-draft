@@ -1,0 +1,20 @@
+---
+# basic image item layout
+# Displays image_small if available, with fall back to object_location. 
+# Adds gallery view to open images full screen using object_location, with fall back to image_small.
+layout: item/item-page-base
+# gallery: true
+---
+{% assign children = site.data[site.metadata] | where_exp: 'item','item.parentid == page.objectid' %}
+
+<div class="card mb-4 text-center">
+
+    {% include item/image.html %}
+    
+    <div class="card-body">
+
+        {% include item/child/compound-item-download-buttons.html %}
+
+    </div>
+
+</div>
