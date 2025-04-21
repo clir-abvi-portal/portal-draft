@@ -3,13 +3,13 @@ title: The Bystander
 layout: about
 permalink: /bystander.html
 # include CollectionBuilder info at bottom
-credits: true
-accessibility: true
+credits: false
+accessibility: false
 # Edit the markdown on in this file to describe your collection
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/jumbotron.html heading=false text=false position=top objectid="https://www.thecivicseason.com/wp-content/uploads/2022/05/SHMI_CivilRights-WWI-WWII.jpg" %} 
+{% include feature/jumbotron.html heading="Explore The Bystander Newspaper" text=false position=top objectid="https://www.thecivicseason.com/wp-content/uploads/2022/05/SHMI_CivilRights-WWI-WWII.jpg" %} 
 
 
 {% include feature/nav-menu.html sections="The Bystander Issues Location;The Bystander Background" %}

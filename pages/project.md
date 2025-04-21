@@ -1,5 +1,5 @@
 ---
-title: The Project
+title: The Grant Project
 layout: about
 permalink: /project.html
 # include CollectionBuilder info at bottom
@@ -9,7 +9,7 @@ accessibility: false
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/jumbotron.html heading=false text=false objectid="https://isuu00001library102stg.z21.web.core.windows.net/assets/media/iowa_state_university_library_south_entrance.jpg" %} 
+{% include feature/jumbotron.html heading="About the Grant Project" text=false objectid="https://titanapi.minisisinc.com/api/links/492768c0ab2f4b059262034753227522/uuid/e1784fd5298647099ff78bdf2c2333cd/access" %} 
 
 {% include feature/nav-menu.html sections="Support;Grant Project Summary" %}
 
