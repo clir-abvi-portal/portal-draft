@@ -3,15 +3,15 @@ title: Contributors
 layout: about
 permalink: /contributors.html
 # include CollectionBuilder info at bottom
-credits: true
-accessibility: true
+credits: false
+accessibility: false
 # Edit the markdown on in this file to describe your collection
 # Look in _includes/feature for options to easily add features to the page
 ---
 
 {% include feature/jumbotron.html heading=false text=false objectid="https://titanapi.minisisinc.com/api/links/492768c0ab2f4b059262034753227522/uuid/e1784fd5298647099ff78bdf2c2333cd/access" %} 
 
-{% include feature/nav-menu.html sections="About the Grant;Advisory Board;Partners" %}
+{% include feature/nav-menu.html sections="Contributors;Advisory Board;Partners;ISU Staff Acknowledgements" %}
 
 ## Contributors
 This project would not have been possible without the generous time, effort, and contributions of multiple individuals and organizations...
